@@ -237,12 +237,12 @@ int main()
 	_getch();
 
 
-	loadimage(&img[0], "0.png");
-	loadimage(&img[1], "1.png");
-	loadimage(&img[2], "3.png");
-	loadimage(&img[3], "4.png");
-	loadimage(&img[4], "5.png");
-	loadimage(&img[5], "7.png");
+	loadimage(&img[0], L"0.png");
+	loadimage(&img[1], L"1.png");
+	loadimage(&img[2], L"3.png");
+	loadimage(&img[3], L"4.png");
+	loadimage(&img[4], L"5.png");
+	loadimage(&img[5], L"7.png");
 
 	initgraph(64*8, 64*8);
 
@@ -259,9 +259,11 @@ int main()
 			level++;
 			if (level > 2)
 			{
-				outtextxy(90, 210, "~~~ 고양이가 물고기를 잡을 수 있도록 ");
-				outtextxy(135, 230, " 도와주셔서 감사합니다! ~~~");
-				outtextxy(150, 250, "~~~ 통관을 축하합니다! ~~~");
+				printf("\n");
+				printf("~~~ 고양이가 물고기를 잡을 수 있도록 도와주셔서 감사합니다!~~~ ");
+				printf("\n");
+				printf("~~~ 통관을 축하합니다! ~~~");
+				
 				_getch();
 				break;
 			}
